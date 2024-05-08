@@ -4,7 +4,6 @@
 import os
 import requests
 import json
-import tqdm
 import pandas as pd
 import pickle
 from datetime import datetime, timedelta
