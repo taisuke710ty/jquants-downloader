@@ -1,11 +1,11 @@
 # coding: utf-8
 
 import os
+import pickle
+from datetime import datetime, timedelta
 import requests
 import json
 import pandas as pd
-import pickle
-from datetime import datetime, timedelta
 
 def fetch_daily_quotes(headers, code:str, st:str=None, end:str=None) -> pd.DataFrame:
     params = {'code': code, 'from':st, 'to':end}
